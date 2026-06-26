@@ -13,6 +13,7 @@ const designs = {
             <div class="status-indicator" style="border:0.1875rem solid #000; padding:0.625rem; margin-bottom:0.625rem;">
                 <span id="dot" style="display:inline-block; width:0.625rem; height:0.625rem; background:red; border-radius:50%;"></span>
                 <strong id="stat-text">AUS: Keine Datenerfassung</strong>
+                <p>Wir möchten gerne ihren genauen Standort spreicher. Sie können die Standortabfrage selbst starten und stoppen</p>
             </div>
             <button class="neo-btn" id="toggle-skeptic">Aufzeichnung starten</button>
             <p style="font-size:0.75rem; margin-top:0.5rem;">Vollständige Datensouveränität: Sie entscheiden über jeden Meter.</p>`
@@ -21,9 +22,9 @@ const designs = {
         id: "balancer",
         name: "Granulare Auswahl",
         html: `
-            <p>Wählen Sie Ihre Genauigkeitsstufe:</p>
-            <label class="choice-card"><input type="radio" name="gr" checked> GPS (Maximale Präzision)</label>
-            <label class="choice-card"><input type="radio" name="gr"> Stadtteil (Anonymisiert)</label>
+            <p>Wir möchten gerne möglichst genau ihren Standort abfragen um damit ihre Radrouten nachvollziehen zu können. Sie haben die Kontrolle wie genau sie ihre Standortdaten mit uns teilen wollen :</p>
+            <label class="choice-card"><input type="radio" name="gr" checked>Genaue Standortdaten und Routen</label>
+            <label class="choice-card"><input type="radio" name="gr"> Ungefähr</label>
             <button class="neo-btn" id="btn-balancer">Einstellung bestätigen</button>`
     },
     optimist: {
@@ -31,7 +32,7 @@ const designs = {
         name: "Optimiertes Design",
         html: `
             <div style="text-align:center;">
-                <p><strong>Helfen Sie München sofort!</strong><br>Unterstützen Sie die Community mit einem Klick.</p>
+                <p><strong>Helfen Sie Berlin sofort!</strong><br>Unterstützen Sie die Community mit einem Klick.</p>
                 <button class="neo-btn asymmetric-btn" id="btn-optimist">ALLES AKZEPTIEREN & HELFEN</button>
                 <a href="#" class="hidden-link">Informationen zu Drittanbietern verwalten</a>
             </div>`
