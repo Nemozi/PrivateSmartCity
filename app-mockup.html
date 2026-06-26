@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">    
+
+</head>
+<body>
+    <nav class="top-bar">
+        <a href="index.html" class="top-bar-left">
+            <img src="favicon.png" alt="Logo" class="top-logo">
+            <span class="top-title">Fahrradstudie</span>
+        </a>
+        
+        <div class="top-bar-right">
+            <a href="info.html" class="info-link">Info</a>
+        </div>
+    </nav>
+    <div id="overlay">
+        <div class="neo-box" style="max-width:400px; text-align:center;">
+            <h3>🚴 Wir möchten die Radwege ausbauen</h3>
+            <p>Um die Radwege in der Stadt auszubauen, möchten wir Standortdaten beim radfahren tracken. Dies hilft uns dabei die perfekten Fahrradwege auszubauen.</p>
+            <button class="neo-btn" onclick="closeOverlay()">Verstanden</button>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        <div class="neo-box">
+            <h2>App-Interface (Prototyp)</h2>
+            <div id="mockup-view" style="padding:20px; border:2px dashed #000; margin:20px 0;">
+                <!-- Dynamisches UI -->
+            </div>
+        </div>
+        
+        <div class="neo-box bg-accent">
+            <p>Wie wahrscheinlich ist es, dass Sie dieses Interface im Alltag nutzen?</p>
+            <input type="range" min="1" max="5" style="width:100%">
+            <a href="comparison.html" class="neo-btn" style="background:#fff; margin-top:20px; ">Zum Vergleich der Konzepte</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

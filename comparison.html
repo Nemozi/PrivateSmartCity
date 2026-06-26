@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Studie: Vergleich</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">    
+
+</head>
+<body>
+    <nav class="top-bar">
+    <a href="index.html" class="top-bar-left">
+        <img src="favicon.png" alt="Logo" class="top-logo">
+        <span class="top-title">Fahrradstudie</span>
+    </a>
+    
+    <div class="top-bar-right">
+        <a href="info.html" class="info-link">Info</a>
+    </div>
+    </nav>
+    <div class="main-wrapper">
+        <header class="neo-box">
+            <h2>Vergleich der Ansätze</h2>
+            <p>Hätte ihnen eventuell eine der Anderen Versionen besser gefallen?</p>
+        </header>
+<div class="comparison-container" style="padding-bottom: 20px;"> 
+        <div id="comparison-render" class="comparison-grid">
+                    <!-- Die UIs werden hier per JS gerendert -->
+        </div>
+</div>
+        <form class="neo-box bg-green">
+            <h3>Welches Design hätte Sie am ehesten zur Datenfreigabe bewegt?</h3>
+            <select class="neo-box" style="width:100%; color:black;" required>
+                <option value="">Bitte wählen...</option>
+                <option value="A">Konzept A (Manuelle Kontrolle)</option>
+                <option value="B">Konzept B (Auswahl der Genauigkeit)</option>
+                <option value="C">Konzept C (Schnelle Community-Zustimmung)</option>
+            </select>
+            
+            <p>War das Ihnen zugeordnete Design passend für Sie?</p>
+            <label><input type="radio" name="fit" value="y"> Ja</label>
+            <label style="margin-left:20px;"><input type="radio" name="fit" value="n"> Nein</label>
+            
+            <button type="button" class="neo-btn" style="margin-top:20px; background:white" onclick="alert('Vielen Dank für Ihre Teilnahme!'); window.location.href='index.html'">Studie Abschließen</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

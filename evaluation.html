@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Bewertung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">    
+
+</head>
+<body>
+    <nav class="top-bar">
+        <a href="index.html" class="top-bar-left">
+            <img src="favicon.png" alt="Logo" class="top-logo">
+            <span class="top-title">Fahrradstudie</span>
+        </a>
+        
+        <div class="top-bar-right">
+            <a href="info.html" class="info-link">Info</a>
+        </div>
+    </nav>
+    <div class="main-wrapper">
+        <div class="neo-box">
+            <h1>Bewertung</h1>
+            <p>Wie wahrscheinlich würden Sie bei diesem Design Ihre Daten teilen?</p>
+            <input type="range" id="rating-range" min="1" max="5" value="3">
+            <div style="display:flex; justify-content: space-between; font-weight:bold;">
+                <span>Nie</span>
+                <span>Sofort</span>
+            </div>
+            <button class="neo-btn" id="eval-submit" style="margin-top:30px;">Weiter zum Vergleich</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
