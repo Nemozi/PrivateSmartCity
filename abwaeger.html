@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Design B - Abwägung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="index.html" class="neo-btn" style="background: white; margin-bottom: 20px;">< Zurück</a>
+
+        <div class="neo-box" style="background: var(--accent-vibrant)">
+            <h1>Ihr Beitrag, Ihre Wahl</h1>
+            <p>Entscheiden Sie selbst, wie detailliert Ihre Daten zur Stadtplanung beitragen sollen.</p>
+        </div>
+
+        <div class="neo-box">
+            <h3>Daten-Modus wählen</h3>
+            
+            <label class="neo-box" style="display: block; cursor: pointer; margin-bottom: 15px; box-shadow: 3px 3px 0 #000;">
+                <input type="radio" name="gran" checked> 
+                <strong>Maximaler Nutzen:</strong> Präzises GPS für exakte Radweg-Analysen.
+            </label>
+
+            <label class="neo-box" style="display: block; cursor: pointer; margin-bottom: 15px; box-shadow: 3px 3px 0 #000;">
+                <input type="radio" name="gran"> 
+                <strong>Mittlerer Nutzen:</strong> Ungefährer Standort (Stadtteil-Ebene).
+            </label>
+
+            <label class="neo-box" style="display: block; cursor: pointer; box-shadow: 3px 3px 0 #000;">
+                <input type="radio" name="gran"> 
+                <strong>Basis Nutzen:</strong> Nur anonyme Bewegungsstatistik (kein Ort).
+            </label>
+
+            <button class="neo-btn" style="width: 100%; margin-top: 20px;">Einstellung bestätigen</button>
+        </div>
+    </div>
+</body>
+</html>

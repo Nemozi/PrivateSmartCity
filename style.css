@@ -1,0 +1,102 @@
+/* style.css */
+:root {
+    --bg-light: #f1f8e9;      /* Sehr helles Grund-Grün */
+    --accent-main: #2e7d32;   /* Dunkles Waldgrün für Text/Header */
+    --accent-vibrant: #a5d6a7; /* Sanftes Akzent-Grün */
+    --accent-action: #00c853;  /* Leuchtendes Grün für Buttons */
+    --black: #1a1a1a;
+    --white: #ffffff;
+    --shadow: 6px 6px 0px var(--black);
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    line-height: 1.6;
+}
+
+/* Container, der die Breite begrenzt */
+.main-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--accent-main);
+    margin-bottom: 15px;
+}
+
+/* Abgemilderte Neo-Box */
+.neo-box {
+    background: var(--white);
+    border: 3px solid var(--black);
+    box-shadow: var(--shadow);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.neo-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--accent-action);
+    border: 3px solid var(--black);
+    box-shadow: 4px 4px 0px var(--black);
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.neo-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--black);
+    background: var(--accent-vibrant);
+}
+
+/* Typen-Karten auf der Startseite */
+.type-card {
+    text-decoration: none;
+    color: var(--black);
+    display: block;
+    background: var(--white);
+    border: 3px solid var(--black);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.type-card:hover {
+    transform: scale(1.02);
+}
+
+.type-card h2 {
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 10px;
+}
+
+/* Utility */
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--black);
+    margin-right: 8px;
+}
+.active { background: var(--accent-action); }
+.inactive { background: #ff5252; }
+
+details {
+    background: var(--bg-light);
+    padding: 10px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+}
