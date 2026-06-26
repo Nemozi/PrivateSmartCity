@@ -5,7 +5,7 @@
     <title>Studie: Vergleich</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.png" type="image/png">    
-
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
     <nav class="top-bar">
@@ -18,32 +18,44 @@
         <a href="info.html" class="info-link">Info</a>
     </div>
     </nav>
-    <div class="main-wrapper">
-        <header class="neo-box">
-            <h2>Vergleich der Ansätze</h2>
-            <p>Hätte ihnen eventuell eine der Anderen Versionen besser gefallen?</p>
-        </header>
-<div class="comparison-container" style="padding-bottom: 20px;"> 
-        <div id="comparison-render" class="comparison-grid">
-                    <!-- Die UIs werden hier per JS gerendert -->
-        </div>
-</div>
-        <form class="neo-box bg-green">
-            <h3>Welches Design hätte Sie am ehesten zur Datenfreigabe bewegt?</h3>
-            <select class="neo-box" style="width:100%; color:black;" required>
-                <option value="">Bitte wählen...</option>
-                <option value="A">Konzept A (Manuelle Kontrolle)</option>
-                <option value="B">Konzept B (Auswahl der Genauigkeit)</option>
-                <option value="C">Konzept C (Schnelle Community-Zustimmung)</option>
-            </select>
-            
-            <p>War das Ihnen zugeordnete Design passend für Sie?</p>
-            <label><input type="radio" name="fit" value="y"> Ja</label>
-            <label style="margin-left:20px;"><input type="radio" name="fit" value="n"> Nein</label>
-            
-            <button type="button" class="neo-btn" style="margin-top:20px; background:white" onclick="alert('Vielen Dank für Ihre Teilnahme!'); window.location.href='index.html'">Studie Abschließen</button>
-        </form>
+    <<div class="main-wrapper">
+    <header class="neo-box">
+        <h2>Abschluss: Direkter Vergleich</h2>
+        <p>Welches der drei Konzepte würde Sie am ehesten überzeugen?</p>
+    </header>
+
+    <div id="comparison-render" class="comparison-grid">
+        <!-- JS füllt dies -->
     </div>
+
+    <form class="neo-box bg-green">
+        <h3>Ihr Fazit</h3>
+        
+        <div class="form-section">
+            <p><strong>Welches Design hat Ihnen am besten gefallen?</strong></p>
+            <select required>
+                <option value="">Bitte wählen...</option>
+                <option value="skeptic">A: Manuelle Kontrolle</option>
+                <option value="balancer">B: Granulare Auswahl</option>
+                <option value="optimist">C: Optimiertes Design</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <p><strong>War das Ihnen zugeordnete Design passend für Sie?</strong></p>
+            <label><input type="radio" name="fit" value="ja"> Ja, absolut</label><br>
+            <label><input type="radio" name="fit" value="nein"> Nein, eher nicht</label>
+        </div>
+
+        <div class="form-section">
+            <p><strong>Haben Sie weitere Anmerkungen?</strong></p>
+            <textarea rows="4" placeholder="Ihr Feedback..."></textarea>
+        </div>
+        
+        <!-- WICHTIG: ID hinzufügen -->
+        <button type="submit" id="submit-study" class="neo-btn" style="background:white">Studie abschließen</button>
+    </form>
+</div>
     <script src="script.js"></script>
 </body>
 </html>

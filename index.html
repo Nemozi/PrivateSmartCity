@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Studie: Onboarding</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png" type="image/png">    
+    <link rel="icon" href="favicon.png" type="image/png">   
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 
 <body>
@@ -20,22 +21,25 @@
     </nav>
     <div class="main-wrapper">
         <header class="neo-box bg-green">
-            <h1>Teilnahme: Studie zu Gestaltungsmöglichkeiten von öffentlichen Datensammelkampangen</h1>
-            <p>Helfen sie uns citizen science Projekte transparenter und effizienter zu gestalten</p>
+            <h1>Teilnahme: Studie zu Gestaltungsmöglichkeiten von öffentlichen Datensammelkampagnen</h1>
+            <p>Helfen Sie uns, Citizen Science Projekte transparenter und effizienter zu gestalten.</p>
         </header>
 
         <form id="study-form" class="neo-box">
             <h3>Ihre persönlichen Merkmale</h3>
+            
             <div class="form-section">
                 <p><strong>1. Wie sicher fühlen Sie sich im Umgang mit Privatsphäre-Einstellungen?</strong></p>
-                <label><input type="radio" name="comp" required> Sehr sicher (Hoch)</label><br>
-                <label><input type="radio" name="comp"> Eher unsicher (Niedrig)</label>
+                <!-- VALUES HINZUGEFÜGT -->
+                <label><input type="radio" name="comp" value="hoch" required> Sehr sicher (Hoch)</label><br>
+                <label><input type="radio" name="comp" value="niedrig"> Eher unsicher (Niedrig)</label>
             </div>
 
             <div class="form-section">
-                <p><strong>Ist ihnen Datenschutz wichtig?</strong></p>
-                <label><input type="radio" name="opinion" required> Ja</label><br>
-                <label><input type="radio" name="opinion"> Nein</label>
+                <p><strong>2. Ist Ihnen Datenschutz wichtig?</strong></p>
+                <!-- VALUES HINZUGEFÜGT -->
+                <label><input type="radio" name="opinion" value="ja" required> Ja</label><br>
+                <label><input type="radio" name="opinion" value="nein"> Nein</label>
             </div>
 
             <div class="form-section">
