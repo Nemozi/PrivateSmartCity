@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (bBtn) bBtn.addEventListener('click', () => bBtn.innerText = "✓ Gespeichert");
         
         const oBtn = document.getElementById('btn-optimist');
-        if (oBtn) oBtn.addEventListener('click', () => oBtn.innerText = "Danke! Sie tracken jetzt ✅");
+        if (oBtn) oBtn.addEventListener('click', () => oBtn.innerText = "Danke! Sie tracken jetzt");
 
         // Speichern des Sliders beim Klick auf Weiter
         const nextBtn = document.querySelector('a[href="comparison.html"]');
