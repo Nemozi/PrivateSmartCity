@@ -16,6 +16,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-vue": "^6.0.8",
     "autoprefixer": "^10.5.4",
+    "gh-pages": "^6.3.0",
     "lucide-vue-next": "^1.0.0",
     "postcss": "^8.5.26",
     "tailwindcss": "^4.3.3",
